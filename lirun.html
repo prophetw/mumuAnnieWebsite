@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <style>
+        div#container{
+            width:1000px;
+            margin:100px auto;
+            text-align: center;
+        }
+    </style>
+    <title>计算利润用得</title>
+    <script src="jquery.js"></script>
+    <script>
+        window.onload = function () {
+            var oInput = document.getElementById('input1');
+            var oInput2 = document.getElementById('input2');
+            oInput2.onkeyup = function (e) {
+                //alert(e.keyCode);
+                if(e.keyCode == 13 ){
+                    $('input:submit').click();
+                }
+            };
+            $('input:submit').click(function () {
+                var checked = $('label input:checked');
+                var chenBen = oInput.value*100;
+                var price = oInput2.value*100;
+                //alert(typeof chenBen);
+                var innerhtml = '';
+                var innerHtml = 0;
+                var divHtml = '';
+                for(var i=0;i<checked.length;i++){
+                    //alert(checked[i]['name']);
+                    innerHtml += parseInt(checked[i]['name']);
+                    innerhtml += parseFloat(parseInt(checked[i]['name'])/100)+'-';
+                }
+                divHtml = '产品计算公式为：'+oInput2.value+'-'+innerhtml+oInput.value+'<br />'+'<span style="font-size: 20px;">该产品利润为：'+parseFloat((price-innerHtml-chenBen)/100) +'</span>';
+
+                $('#result').html(divHtml);
+            });
+
+        };
+    </script>
+</head>
+<body>
+
+<div id="container">
+    <div id="product" style="display: none;">
+        <label for="k1jiemian"><input type="checkbox" name="600" id="k1jiemian" />k1洁面乳：63元</label>
+        <label for="k1shuang"><input type="checkbox" name="96" id="k1shuang" />k1爽肤水：92</label>
+        <label for="k1ru"><input type="checkbox" name="7" id="k1ru" />k1乳液:99</label>
+        <label for="k1ru"><input type="checkbox" name="24" id="m2jie" />m2洁面乳：67</label>
+        <label for="m2shuang"><input type="checkbox" name="144" id="m2shuang"/>m2爽肤水：93</label>
+        <label for="m2ru"><input type="checkbox" name="25" id="m2ru"/>m2乳液：126</label>
+        <label for="m2mian"><input type="checkbox" name="450" id="m2mian"/>m2面霜：128</label>
+        <label for="q1"><input type="checkbox" name="38" id="q1"/>q1面膜:18</label>
+        <label for="e1"><input type="checkbox" name="85" id="e1"/>e1眼霜:179</label>
+        <label for="m2jing"><input type="checkbox" name="169" id="m2jing"/>m2晶纯液：166</label>
+        <label for="mumu"><input type="checkbox" name="193" id="mumu"/>木木</label>
+        <label for="annie"><input type="checkbox" name="850" id="annie"/>安妮</label>
+    </div>
+    成本价：<input type="text"  id="input1"/><br/>
+    零售价：<input type="text"  id="input2"/><br/>
+    <br/>
+    <input type="submit" value="submit"/>
+    <br/>
+    <br/>
+    <label for="yunfei"><input type="checkbox" name="600" id="yunfei" checked/>运费</label>
+    <label for="hezi"><input type="checkbox" name="96" id="hezi" checked/>盒子</label>
+    <label for="qipaodai"><input type="checkbox" name="7" id="qipaodai" checked/>气泡袋</label>
+    <label for="ch4"><input type="checkbox" name="24" id="ch4" checked/>纸丝</label>
+    <label for="ch5"><input type="checkbox" name="144" id="ch5"/>鼠标垫</label>
+    <label for="ch6"><input type="checkbox" name="25" id="ch6"/>粉刺针</label>
+    <label for="ch1"><input type="checkbox" name="450" id="ch1"/>分装套瓶</label>
+    <label for="ch2"><input type="checkbox" name="38" id="ch2"/>分装单瓶</label>
+    <label for="ch3"><input type="checkbox" name="85" id="ch3"/>化妆棉</label>
+    <label for="ch7"><input type="checkbox" name="169" id="ch7"/>毛巾</label>
+    <label for="ch8"><input type="checkbox" name="193" id="ch8"/>唇膏</label>
+    <label for="ch9"><input type="checkbox" name="850" id="ch9"/>导入仪</label>
+    <label for="ch9"><input type="checkbox" name="900" id="q11"/>q1</label>
+    <label for="ch9"><input type="checkbox" name="900" id="q2"/>q1</label>
+    <label for="ch9"><input type="checkbox" name="900" id="q3"/>q1</label>
+    <br/><br/>
+    <div id="result"></div>
+
+</div>
+
+
+<!--<input name="chioces" type="checkbox"/>-->
+<!--<input name="chioces" type="checkbox"/>-->
+<!--<input name="chioces" type="checkbox"/>-->
+<!--<input name="chioces" type="checkbox"/>-->
+<!--<input name="chioces" type="checkbox"/>-->
+<!--<input name="chioces" type="checkbox"/>-->
+<!--<input name="chioces" type="checkbox"/>-->
+<!--<input name="chioces" type="checkbox"/>-->
+
+</body>
+</html>

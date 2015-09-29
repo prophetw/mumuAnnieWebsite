@@ -1,4 +1,4 @@
-
+﻿
 *{margin:0;padding:0;}
 body{
 	font-family:Microsoft YaHei, 微软雅黑,SimHei,STHeiti;
@@ -735,7 +735,7 @@ div#servcenter p{
         width: 100%;
         min-width: 100%;
         text-align: center;
-        line-height: 76px;
+        /*line-height: 76px;*/
         /*position: relative;*/
     }
     nav div#nav a img{
@@ -818,7 +818,7 @@ div#servcenter p{
         width: 100%;
         min-width: 100%;
         text-align: center;
-        line-height: 76px;
+        /*line-height: 76px;*/
     }
     nav div#nav ul{
         display: none;
@@ -907,7 +907,7 @@ div#servcenter p{
         width:80px;
     }
     article div div#FAQ div#comeout div	article section p{
-        width:160;
+        width:160px;
     }
     article div div#FAQ div#comeout div	article section div{
         margin:0 10px;
