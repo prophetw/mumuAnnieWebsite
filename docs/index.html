@@ -1,1 +1,422 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="baidu-site-verification" content="0WZRzpW35M" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="木木安妮、mumuannie、木木安妮官方网站、mumuannie官网、mumu－annie官网、木木安妮官网、木木安妮护肤品牌、木木控油洁面乳、安妮水润洗面奶"/>
+    <meta name="description" content="木木安妮品牌官方网站专为游戏玩家定制护肤品牌"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title	alt="mumuannie木木安妮官网" title="mumuannie木木安妮官网">木木安妮官网</title>
+	<link rel="stylesheet" href="index.css"/>
+	<script src="jquery.js" type="text/javascript"></script>
+    <script src="moveAdvanced.js"></script>
+	<script src="easing.js" type="text/javascript"></script>
+    <script src="GetJsByDiffDevice.js"></script>
+    <script src="swipeForMobile.js"></script>
+	<script>
+		$(document).ready(function () {
+            getDiffJs('PC.js');
+        });
+	</script>
+</head>
+<body>
+	<div class="wrap" id="carousel">
+		<ul>
+			<li><a href="#"><img src="scroll_brand.jpg"/></a></li>
+			<li><a href="mumu.php"><img src="scroll_mumu.jpg"/></a></li>
+			<li><a href="annie.php"><img src="scroll_anni.jpg"/></a></li>
+			<li><a href="#"><img src="scroll_mumuannie.jpg"/></a></li>
+		</ul>
+		<ul id="dot">
+		</ul>
+		<img id="left" src="left.png"/>
+		<img id="right" src="right.png"/>
+	</div>
+	<nav>
+		<div id="nav">
+            <a href="index.html"><img src="a_logo_1.png" style="width:158px;height:24px;"/></a>
+            <div id="closeOpenTag">
+                <svg viewBox="280 180 410 300">
+                    <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+                    <path d="M300,320 L540,320" id="middle"></path>
+                    <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+                </svg>
+            </div>
+			<ul>
+				<li><a href="javascript:;">洁面乳</a></li>
+				<li><a href="javascript:;">爽肤水</a></li>
+				<li><a href="javascript:;">乳液</a></li>
+				<li><a href="javascript:;">眼霜</a></li>
+				<li><a href="javascript:;">面霜</a></li>
+				<li><a href="javascript:;">BB霜</a></li>
+				<li><a href="javascript:;">面膜</a></li>
+				<li><a href="javascript:;">精华</a></li>
+			</ul>
+		</div>
+	</nav>
+    <div id="phonenav" style="display: none;">
+         <div style="position: absolute;width:100%;height:150px;overflow: hidden">
+            <ul id="navul" class="navul">
+            <li>
+                <a href="javascript:;">洁面乳</a>
+                <ul>
+                    <li><a href="mumu.php">木木控油洁面乳</a></li>
+                    <li><a href="annie.php">安妮水润洁面乳</a></li>
+                    <li><a href="k1.php">K1男士洁面乳</a></li>
+                    <li><a href="m2jiemian.php">M2梦幻洁面乳</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">爽肤水</a>
+                <ul>
+                    <li><a href="m2shui.php">M2梦幻水</a></li>
+                    <li><a href="k1shui.php">K1男士水</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">乳液</a>
+                <ul>
+                    <li><a href="m2ru.php">M2梦幻乳</a></li>
+                    <li><a href="k1ru.php">K1男士乳</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">眼霜</a>
+                <ul>
+                    <li><a href="e1.php">E1璀璨眼霜</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">面霜</a>
+                <ul>
+                    <li><a href="mianshuang.php">M2时光面霜</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">BB霜</a>
+                <ul>
+                    <li><a href="bb.php">BB霜</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">面膜</a>
+                <ul>
+                    <li><a href="mianmo.php">Q1晶萃面膜</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;">精华</a>
+                <ul>
+                    <li><a href="jingchunye.php">晶纯液</a></li>
+                </ul>
+            </li>
+        </ul>
+         </div>
+    </div>
+	<div class="nav_sub_bar_father">
+		<div class="nav_sub_bar">
+			<div class="inner" id="jiemianru">
+			<a href="annie.php" target="_blank"><img src="nav_sup_bar_annie_tiny.png" title="天然美白温和"/></a>
+			<p class="briefIntro">温和零刺激<br/> <span>芦荟、桑根提取物</span> </p>
+			<a href="mumu.php" target="_blank"><img src="nav_sup_bar_mumu_tiny.png"/></a>
+				<p class="briefIntro">舒适不紧绷<br/> <span>茶叶精粹</span></p>
+			<a href="m2jiemian.php" target="_blank"><img src="nav_sup_bar_m2_jiemian.png"/></a>
+				<p class="briefIntro" style="left:75%">最好的洁面乳 <br/>你知道的 </p>
+			<a href="k1.php" target="_blank"><img src="nav_sup_bar_k1_jiemian.png"/></a>
+				<p class="briefIntro" style="left:75%">深层控油<br/>有效去除黑头</p>
+			</div>
+		</div>
+		<div class="nav_sub_bar">
+			<div class="inner" id="shuangfushui">
+			<a href="m2shui.php" target="_blank"><img src="nav_sup_bar_m2_shuangfu.png"/></a>
+				<p class="briefIntro" style="left:30%">深层补水<br/>马齿苋提取物</p>
+			<a href="k1shui.php" target="_blank"><img src="nav_sup_bar_k1_shuangfu.png"/></a>
+				<p class="briefIntro" style="left:65%">补水控油<br/>银耳提取物</p>
+			</div>
+		</div>
+		<div class="nav_sub_bar">
+			<div class="inner" id="ruye">
+			<a href="m2ru.php" target="_blank"><img src="nav_sup_bar_m2_ruye.png"/></a>
+				<p class="briefIntro"style="left:30%">清爽控油<br/>丝毫无油光</p>
+			<a href="k1ru.php" target="_blank"><img src="nav_sup_bar_k1_ruye.png"/></a>
+				<p class="briefIntro"style="left:65%">持久控油<br/>极致收缩毛孔</p>
+			
+			</div>
+		</div>
+		<div class="nav_sub_bar">
+			<div class="inner" id="yanshuang">
+			<a href="e1.php" target="_blank"><img src="nav_sup_bar_e1.png"/></a>
+				<p class="briefIntro"style="left:35%" >眼袋黑眼圈哪去了<br/>焕发靓丽明眸</p>
+			</div>
+		</div>
+		<div class="nav_sub_bar">
+			<div class="inner" id="mianshuang">
+			<a href="mianshuang.php" target="_blank"><img src="nav_sup_bar_m2_mianshuang.png"/></a>
+				<p class="briefIntro"style="left:35%" >干皮救星<br/>深层补水滋养</p>
+			</div>
+		</div>
+		<div class="nav_sub_bar">
+			<div class="inner" id="BB">
+			<a href="bb.php" target="_blank"><img src="nav_sup_bar_m2_bb.png"/></a>
+				<p class="briefIntro" style="left:35%">清透自然<br/>素颜女王就是你</p>
+			</div>
+		</div>
+		<div class="nav_sub_bar">
+			<div class="inner" id="mianmo">
+			<a href="mianmo.php" target="_blank"><img src="nav_sup_bar_q1.png"/></a>
+				<p class="briefIntro" style="left:35%">细致毛孔<br/>美白保湿</p>
+			</div>
+		</div>
+		<div class="nav_sub_bar">
+			<div class="inner" id="jinghua">
+			<a href="jingchunye.php" target="_blank"><img src="nav_sup_bar_m2_jinchunye.png"/></a>
+				<p class="briefIntro" style="left:35%">保湿精华<br/>C18K顶级美白</p>
+			</div>
+		</div>
+	</div>
+	<article id="article">
+		<div class="top">
+			<div class="top_two_section" id="new_promotion">
+				<div>
+                    <a target="_blank" href="https://ff-win.taobao.com/promotion.htm?spm=0.0.0.0.KNvZNi&id=290979649"><img src="promotion.jpg"/></a>
+				</div>	
+			</div>
+			<div class="top_two_section" id="main_product">
+				<img src="hot.jpg"/>
+				<a href="annie.php" target="_blank"><img src="hot2.jpg" id="mainpro" alt="main_product" /></a>
+			</div>
+		</div>
+		<div class="down">
+			<div class="down_three_section" id="brand_story">
+                <a href="suit.html" target="_blank"><img src="brand.jpg" id="brand_img"/></a>
+			</div>
+			<div class="down_three_section" id="contact_us">
+				<div>
+					<a href="javascript:;"><img src="contact.jpg" id="contact_img"/></a>
+					<div id="alert">
+						<div class="content">
+							<h1>联系我们</h1>
+							<div>
+								<h2>微信</h2>
+								<img src="wx.jpg" style="width:170px;height:170px" alt="微信" />
+								<h2>微博</h2>
+								<img src="wb.jpg" style="width:170px;height:170px" alt="微博" />
+								<h2>淘宝店</h2>
+								<img src="tb.jpg" style="width:170px;height:170px" alt="淘宝" />
+								<h2>400热线</h2>
+								<p>400-9922-157</p>
+								<h2>欢迎加入QQ群</h2>
+								<p>390828471</p>
+							</div>
+							<button class="close">
+								<img src="close.png" alt="close" />
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="down_three_section" id="FAQ">
+			    <div>
+                    <a href="javascript:;"><img id="faq_img" src="faq.jpg"/></a>
+                    <div id="comeout">
+                        <h1>FAQ&nbsp;常见问题汇总</h1>
+                        <div>
+                            <ul id="faqnav">
+                                <li class="active"><a href="javascript:;">关于物流</a></li>
+                                <li><a href="javascript:;">关于产品</a></li>
+                                <li><a href="javascript:;">关于过敏</a></li>
+                                <li><a href="javascript:;">关于支付</a></li>
+                                <li><a href="javascript:;">关于dreamtimes</a></li>
+                            </ul>
+                            <article class="faq">
+                                <section class="active">
+                                    <div class="triangle one"></div>
+                                    <div>
+                                        <p class="question"><b>Q:默认情况下用什么快递呢?</b></p>
+                                        <p class="answer">A:默认情况下用的是申通快递</p>
+                                        <p class="question"><b>Q:发货后快递一般几天到?</b></p>
+                                        <p class="answer">A:发货后一般同城交易隔天可以收到，基本都是3天，法定节假日或活动期间时间会适当延长。（备注:恶劣天气或天灾会延期）</p>
+                                        <p class="question"><b>Q:每天的发货时间?</b></p>
+                                        <p class="answer">A:每个订单都将根据付款时间来安排发货。一般17点之前付款的，当天可以发出。</p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="triangle two"></div>
+                                    <div>
+                                        <p class="question"><b>Q:木木控油洁面乳?</b></p>
+                                        <p class="answer">A:木木控油洁面乳是一款<b>温和、不刺激、针对偏油性皮肤</b>的洁面乳。偏油性的皮肤的男士女士通用，主要成分是三种茶叶的提取物，</p>
+                                        <p class="question"><b>Q:安妮水润洁面乳?</b></p>
+                                        <p class="answer">A:安妮水润洁面乳是一款<b>温和、不刺激、针对偏油性皮肤</b>的洁面乳。偏油性的皮肤，男士女士</p>
+                                        <p class="question"><b>Q:如何使用洁面乳?</b></p>
+                                        <p class="answer">A:1、用温水湿润脸部，挤出洁面乳，量都不宜过多，面积有五分硬币大小即可。在向脸上涂抹之前，一定要先把洁面乳在手心充分打起泡沫。
+                                            <br/>2、把泡沫涂在脸上以后要轻轻打圈按摩，不要太用力，以免产生皱纹。最好用中指跟无名指，因为中指跟无名指的力道较小，不会伤害皮肤，大概按摩30秒左右，让泡沫遍及整个面部。鼻尖和鼻翼是重点清洁的地方，清洁时间可以适当加长。<br/>
+                                            3、用洁面乳按摩完后，就可以清洗了。</p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="triangle three"></div>
+                                    <div id="">
+                                        <p class="question"><b>Q:默认情况下用什么快递呢</b></p>
+                                        <p class="answer">A:默认情况下用的是申通快递</p>
+                                        <p class="question"><b>Q:默认情况下用什么快递呢</b></p>
+                                        <p class="answer">A:默认情况下用的是申通快递</p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="triangle four"></div>
+                                    <div id="pay">
+                                        <p class="question"><b>Q:关于支付的一些事</b></p>
+                                        <p class="answer">A:出于安全的考虑，支付会用到您的<b>淘宝账号</b>，用您熟悉的支付方式去支付，保障了您的支付安全，放心支付消除您的顾虑!</p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="triangle five"></div>
+                                    <div id="package">
+                                        <p class="question"><b>Q:默认情况下用什么快递呢</b></p>
+                                        <p class="answer">A:默认情况下用的是申通快递</p>
+                                        <p class="question"><b>Q:默认情况下用什么快递呢</b></p>
+                                        <p class="answer">A:默认情况下用的是申通快递</p>
+                                    </div>
+
+                                </section>
+                            </article>
+                        </div>
+                        <button class="close">
+                            <img src="close.png" alt="close" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</article>
+	<div class="screen"></div>
+	<footer>
+        <div id="footTop">
+            <img src="footerTop1.png" id="the_brand" alt="品牌标识"/>
+            <img src="footerBorder.gif"  alt="分割线"/>
+            <a target="_blank" href="http://weibo.com/mumuannie"><img src="footerWeibo.png" id="wbLogo" alt="官方微博"/></a>
+            <img src="footerWeixin.png" id="wxLogo" alt="官方微信"/>
+            <a target="_blank" href="http://tieba.baidu.com/f?kw=%C4%BE%C4%BE%B0%B2%C4%DD&fr=ala0&tpl=5"><img src="footerTieba.png" alt="官方贴吧"/></a>
+            <img src="footerShop.png" alt="木木安妮购物商城"/>
+            <img src="wx.jpg" id="weiXinMa" alt="木木安妮官方微信"/>
+        </div>
+		<p>
+			<a href="javascript:;" id="company">公司介绍</a>
+			<a href="javascript:;" id="service">服务使用条款</a>
+			<a href="javascript:;" id="privacy">隐私声明</a>
+			<a href="javascript:;" id="seviveCenter">客户服务中心</a>
+		</p>
+        <div id="brandBrief">
+            <h1>品牌简介</h1>
+            <br/>
+            <div id="brandContent">
+                <p>木木安妮，是一家以基础护肤为主导的化妆品公司。荟萃全世界顶级植物精华,运用植物“魔力”，诞生珍贵护肤佳品，使心灵和肌肤拥有超然魔力。唤醒纯粹的自然之美，与您共寻自然记忆。基础护肤品是纯天然的，它的原料只来自纯天然植物。木木安妮护肤品牌，是洁面乳和植物护理品界的合作典范，由台湾优能生技研发和检测，上海优康化妆品有限公司负责生产，合肥木木安妮电子商务有限公司负责运营和销售。</p>
+                <br/>
+                <h1>品牌发展</h1>
+                <br/>
+                <p>木木安妮，是奋斗于护肤事业的lol爱好者，专门为网游爱好者研发，以预防辐射为核心，以创造最舒适的洁肤体验为原则，致力于打造网游第一护肤品牌。”纯天然最舒适“一直都是护肤界对MumuAnnie木木安妮的评价，也正因为如此，MumuAnnie也在不断诠释更自然的护肤理念。MumuAnnie木木安妮卓绝的护肤功效，来自纯天然植物嫩肤成分D-leon，富含多种肌肤营养活力因子，能深入肌肤底层细胞，淡化黑色素，恢复肌肤自然通透亮白及泽润，使其达到平衡状况。为了追求最佳的提取源，由于提取过程复杂，成本极高，科学家不惜以10年的努力，以超临界CO2萃取技术提取到大批的D-leon因子，并完美结合OCO小分子水体系融入护肤产品。  </p>
+                <br/>
+                <h1>核心技术</h1>
+                <br/>
+                <h3> EV+</h3>
+                <p>天然植物萃取成分，对电磁辐射具有高饱和度吸收能力，滋润肌肤的同时，与皮肤表面形成透气保护层，持续有效代替肌肤表皮吸收电磁辐射，有效缓解肌肤所遭受的直接辐射伤害。</p>
+                <h3>D-leon</h3>
+                <p>超临界CO2萃取技术提取高纯度嫩肤成分，通过OCO水体系透过肌肤表层，为肌肤提供充沛营养动力，服感光滑、亮泽、具有显著的立体透白，紧肤功效。</p>
+                <h3>OCO2.0</h3>
+                <p>OCO小分子水体系的基础上，进一步通过调整氢键的矩阵结构，优化磁处理过程，使小分子水半径进一步缩小，排列更密集，从而更容易深入肌肤底层细胞，传递肌肤营养成分。</p>
+                <br/><br/><br/>
+            </div>
+            <button class="close">
+                <img src="close.png" alt="close" />
+            </button>
+        </div>
+		<div id="privacyContent">
+			<div id="prvcontent">
+                <h1>隐私声明</h1>
+                <br/>
+                <div>
+					　　木木安妮网（以下简称木木安妮）非常重视对您的个人隐私保护，有时候我们需要某些信息才能为您提供您请求的服务，本隐私声明解释了这些情况下的数据收集和使用情况。<br/>
+					　　本隐私声明适用于木木安妮的所有相关服务，随着木木安妮服务范围的扩大，隐私声明的内容可由木木安妮随时更新，且毋须另行通知。更新后的隐私声明一旦在网页上公布即有效代替原来的隐私声明。
+
+					<p>我们收集哪些信息</p>
+					　　通常，您能在匿名的状态下访问木木安妮并获取信息。当我们需要能识别您的个人信息或者可以与您联系的信息时，我们会征求您的同意。通常，在您注册木木安妮或申请开通新的功能时，我们可能收集这些信息：姓名，Email地址，住址和电话号码，并征求您的确认。
+
+
+					<p>关于您的个人信息</p>
+					　　木木安妮严格保护您个人信息的安全。我们使用各种安全技术和程序来保护您的个人信息不被未经授权的访问、使用或泄露。
+					　　<br/>木木安妮会在法律要求或符合木木安妮的相关服务条款、软件许可使用协议约定的情况下透露您的个人信息，或者有充分理由相信必须这样做才能：(a) 满足法律或行政法规的明文规定，或者符合木木安妮网站适用的法律程序；（b）符合木木安妮相关服务条款、软件许可使用协议的约定；(c) 保护木木安妮的权利或财产，以及在紧急情况下保护木木安妮员工、木木安妮产品或服务的用户或大众的个人安全。<br/>
+					　　木木安妮不会未经您的允许将这些信息与第三方共享，本声明已经列出的上述情况除外。
+
+					<p>Cookie的使用</p>
+					　　使用 Cookie 能帮助您实现您的联机体验的个性化，您可以接受或拒绝 Cookie ，大多数 Web 浏览器会自动接受 Cookie，但您通常可根据自己的需要来修改浏览器的设置以拒绝 Cookie。<br/>
+					　　木木安妮有时会使用 Cookie 以便知道哪些网站受欢迎，使您在访问木木安妮时能得到更好的服务。Cookie不会跟踪个人信息。<br/>
+					　　当您注册木木安妮时，木木安妮亦会使用 Cookie。在这种情况下，木木安妮会收集并存储有用信息，当您再次访问木木安妮时，我们可辨认您的身份。来自木木安妮的 Cookie 只能被木木安妮读取。<br/>
+					　　如果您的浏览器被设置为拒绝 Cookie，您仍然能够访问木木安妮的大多数网页。
+
+					<p>关于免责说明</p>
+					　　就下列相关事宜的发生，木木安妮不承担任何法律责任：
+					<div style="padding-left:40px;">
+						* 由于您将用户密码告知他人或与他人共享注册帐户，由此导致的任何个人信息的泄露，或其他非因木木安妮原因导致的个人信息的泄露；　　
+						<br/>
+						* 木木安妮根据法律规定或政府相关政策要求提供您的个人信息；
+						　　 <br/>
+						* 任何第三方根据木木安妮各服务条款及声明中所列明的情况使用您的个人信息，由此所产生的纠纷；
+						　　　<br/>
+						* 任何由于黑客攻击、电脑病毒侵入或政府管制而造成的暂时性网站关闭；
+						　　　<br/>
+						* 因不可抗力导致的任何后果；
+						　　　<br/>
+						* 木木安妮在各服务条款及声明中列明的使用方式或免责情形。
+						<br/><br/><br/>
+					</div>
+				</div>
+
+				<button class="close">
+					<img src="close.png" alt="close" />
+				</button>
+			</div>
+		</div>
+		<div id="serviceContent">
+			<h1>服务使用条款</h1>
+			<br/>
+			<div id="serviceCon">
+                <p>进入并使用本网站必须遵守下列条款和所有适用法律。您可以因娱乐和获取信息的目的浏览本网站，然而，请勿分发、删减、传播或修改本网站的内容，除非得到木木安妮(中国）的书面许可。木木安妮（中国）并不确保本网站及与本网站有关网站提供完整并且精确无误的信息。如果您因为进入本网站、使用本网站或与本网站相连的其他网站的内容而遭受直接、间接或偶然的损害，或受到惩罚，木木安妮（中国）及其任何附属公司不承担任何责任。
+                </p>
+                <p>您通过互联网在木木安妮网站上张贴的任何信息都将被视为非保密并且非专有的，您应同意木木安妮（中国）及其附属公司有权力在任何时候使用该信息，包括再制作、传送、公布、传播和张贴。并且，您张贴或传播的信息不得有非法的、恐吓的、诽谤的、诋毁的、淫秽的、黄色的或亵渎性的内容，且不得构成或引致犯罪或违法行为
+                </p>
+                <p>除非特别指出，所有本网站使用的名称、商标图案均为木木安妮（中国）或其 在世界各地的公司用于产品上的注册商标。严禁随意使用或滥用这些商标或任何本网站 的其他内容，除非本文或本网站表示许可。
+                </p>
+            </div>
+			<button class="close">
+				<img src="close.png" alt="close" />
+			</button>
+		</div>
+        <div id="servcenter">
+            <h1>客户服务中心</h1>
+            <br/>
+            <div id="centerContent">
+                <h2>400电话</h2>
+                <br/>
+
+                <p>09:00～22:00</p>
+                <p>400-9922-157</p>
+                <br/>
+                <h2>邮箱</h2>
+                <br/>
+                <p>mumuannie@126.com</p>
+                <br/><br/>
+                <p>备注:对产品有什么疑问或建议，可以直接拨打官方400电话</p>
+            </div>
+            <button class="close">
+                <img src="close.png" alt="close" />
+            </button>
+        </div>
+		<p>
+			Copyright © 2015 MumuAnnie Inc. 保留所有权利。
+		</p>
+		<br/><br/>
+	</footer>
+</body>
+</html>
